@@ -1,0 +1,40 @@
+# AI Log - Faz 1
+
+## BENİM SORUM 
+Yukarıdaki Python şifreleme kodunda hangi tasarım sorunlarını görüyorsun? Hangi örüntüler çözer?
+
+
+## AI'ın cevabı (özet)
+if/elif zinciri ile algoritma seçimi
+Yeni bir algoritma eklemek istediğinde:
+
+constructor değişecek
+sifrele() değişecek
+coz() değişecek
+
+Yani sınıf sürekli modifiye ediliyor.
+
+Bu, Open/Closed Principle ihlali:
+
+“Kod geliştirmeye açık, değiştirmeye kapalı olmalı.”
+
+Çözüm: Strategy Pattern
+
+Her algoritmayı ayrı sınıfa taşırsın.
+
+
+Bu senaryoda Factory Method oldukça uygun olur çünkü algoritma oluşturma mantığını merkezi hale getirir ve if/elif dağınıklığını azaltır.
+if algoritma == "basit":
+strateji = SifrelemeFactory.olustur("basit")
+Factory Method + Strategy birlikte
+
+En temiz yaklaşım genelde:
+
+Strategy Pattern → algoritmaları temsil eder
+Factory Method → doğru stratejiyi üretir
+
+
+
+
+## Benim uyguladığım
+AI Factory Method önerdi. Ben de uygulayacağım. 
