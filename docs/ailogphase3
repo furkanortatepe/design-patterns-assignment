@@ -1,0 +1,10 @@
+# AI Log - Faz 3
+
+## Pair programming oturumu (30 dakika)
+AI ile Strategy ve Observer pattern'lerini tartıştık. AI Strategy önerdi çünkü runtime değişim gerekiyor. Observer event logging için uygun.
+
+## AI olmadan ne kadar sürerdi?
+Tahminen 8 saat. AI ile 4 saat.
+
+## AI'ın yanılttığı noktalar
+AI Observer'ın gereksiz olduğunu söyledi ama ödevde 2 behavioral pattern istendiği için ekledim. AI sıkıştırma için hazır kütüphane önerdi, ben run-length encoding yaptım.
