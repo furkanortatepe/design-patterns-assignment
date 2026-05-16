@@ -1,14 +1,10 @@
-# Tasarım Örüntüleri - Şifreleme Aracı
 
-## Faz 1 - Creational
-- **Factory Method** (`src/factory.py`): Algoritma nesnelerini oluşturmak için.
-- **Singleton** (`src/logger.py`): Loglama için tek nesne.
+## Factory Method
+- **Nerede:** `factory.py` - `SifrelemeFactory`
+- **Neden:** Algoritma nesnelerinin yaratılmasını merkezileştirmek için.
+- **Kazanım:** Yeni algoritma eklendiğinde sadece factory değişir.
 
-## Faz 2 - Structural
-- **Decorator** (`src/decorators.py`): Şifrelemeye sıkıştırma eklemek için.
-- **Facade** (`src/facade.py`): Karmaşık alt sistemi basit arayüzle kullanmak için.
-
-## Faz 3 - Behavioral
-- **Strategy** (`src/strategy.py`): Runtime algoritma değişimi.
-- **Observer** (`src/observer.py`): Şifreleme olaylarını izleme.
-- **OCP örneği**: `src/sezar_strategy.py` eklenirken mevcut kodlar değişmedi.
+## Singleton
+- **Nerede:** `logger.py` - `Logger`
+- **Neden:** Uygulama genelinde tek log nesnesi olması için.
+- **Kazanım:** Bellek tasarrufu ve merkezi log yönetimi.
