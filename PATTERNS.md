@@ -1,11 +1,14 @@
-## Faz 2 - Structural Örüntüler
+# Tasarım Örüntüleri - Şifreleme Aracı
 
-### Decorator
-- **Nerede:** `decorators.py` - SikistirmaDecorator
-- **Neden:** Şifreleme algoritmalarını değiştirmeden sıkıştırma özelliği eklemek için.
-- **Kazanım:** Yeni özellikler mevcut kodu kırmadan eklenebiliyor.
+## Faz 1 - Creational
+- **Factory Method** (`src/factory.py`): Algoritma nesnelerini oluşturmak için.
+- **Singleton** (`src/logger.py`): Loglama için tek nesne.
 
-### Facade
-- **Nerede:** `facade.py` - SifrelemeFacade
-- **Neden:** Factory ve Decorator'ı tek bir basit arayüz altında toplamak için.
-- **Kazanım:** Kullanıcı karmaşık alt sistemi bilmek zorunda değil.
+## Faz 2 - Structural
+- **Decorator** (`src/decorators.py`): Şifrelemeye sıkıştırma eklemek için.
+- **Facade** (`src/facade.py`): Karmaşık alt sistemi basit arayüzle kullanmak için.
+
+## Faz 3 - Behavioral
+- **Strategy** (`src/strategy.py`): Runtime algoritma değişimi.
+- **Observer** (`src/observer.py`): Şifreleme olaylarını izleme.
+- **OCP örneği**: `src/sezar_strategy.py` eklenirken mevcut kodlar değişmedi.
