@@ -1,5 +1,6 @@
 
 
+## Faz 3 - Behavioral Örüntüler
 
 ### Strategy
 - **Nerede:** `strategy.py` - `SifrelemeStratejisi`, `BasitStrateji`, `TersStrateji`, `SifrelemeContext`
@@ -26,4 +27,3 @@ Tahminen 8 saat. AI ile 4 saat.
 - AI sıkıştırma için hazır kütüphane (zlib) önerdi, ancak ben basit run-length encoding yaptım.
 - AI Facade'den bahsetmedi, ben Phase 2'de eklemiştim.
 - 
-- ## Faz 3 - Behavioral Örüntüler
