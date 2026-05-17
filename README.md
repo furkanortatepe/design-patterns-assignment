@@ -1,8 +1,7 @@
-
 # Şifreleme Aracı - Tasarım Örüntüleri Ödevi
 
 **Konu Seçimi:** E - Şifreleme Aracı  
-**Gerekçe:** Algoritma seçimi constructor'da sabit, runtime değişemiyor. Creational, structural ve behavioral pattern'lerle esneklik sağlanacak.
+**Gerekçe:** Algoritma seçimi constructor'da sabit, runtime değişime kapalı. Çözüm için creational, structural ve behavioral pattern'ler uygulandı.
 
 ## Proje ne yapar?
 Basit metin şifreleme/çözme aracı. Farklı algoritmaları runtime değiştirebilir, olayları izleyebilir.
@@ -14,11 +13,13 @@ Basit metin şifreleme/çözme aracı. Farklı algoritmaları runtime değiştir
 - **Facade** (Faz 2) - Basit arayüz
 - **Strategy** (Faz 3) - Runtime algoritma değişimi
 - **Observer** (Faz 3) - Olay izleme
+- **OCP örneği** – `sezar_strategy.py` eklenirken mevcut kod değişmedi.
 
 ## Faz 2 - Structural Örüntüler
 Bu fazda Decorator ve Facade uygulanmıştır.
 - Decorator: Şifrelemeye sıkıştırma özelliği ekler.
 - Facade: Karmaşık alt sistemi (Factory + Decorator) basit arayüzde toplar.
+- 
 
 ## Nasıl çalıştırılır?
 ```bash
