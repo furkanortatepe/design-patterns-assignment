@@ -1,0 +1,20 @@
+# AI Log - Faz 2
+
+## Sorduğum prompt
+"Şifreleme sistemime sıkıştırma eklemek istiyorum. Decorator mu yoksa Adapter mi uygun? Farklarını açıkla."
+
+## AI'ın cevabı (özet)
+Şifreleme sistemine sıkıştırma (compression) özelliği eklemek istiyorsan, çoğu durumda uygun tasarım deseni Decorator olur.
+Adapter ise farklı arayüzleri birbirine uyarlamak için kullanılır. İkisi benzer görünse de amaçları tamamen farklıdır.
+
+Özellik	                                     Decorator               	Adapter
+Amaç	Yeni davranış eklemek	Arayüz uyarlamak
+Mevcut sistemi genişletir mi?                	Evet	                   Hayır
+Zincirleme kullanılabilir mi?	                Evet	                   Genelde hayır
+Runtime’da özellik eklenebilir mi?	          Evet	                    Amaç bu değildir
+Şifreleme+sıkıştırma için uygun mu?          	Evet	                    Ancak farklı API varsa
+
+AI Decorator önerdi çünkü sarmalayarak ek özellik eklemek daha uygun. Adapter farklı arayüzleri uyarlamak için. Ben Decorator seçtim ve Facade ile kullanımı basitleştirdim.
+
+## AI'ın yanlış/eksik önerisi
+AI sıkıştırma algoritmasının çok karmaşık olabileceğini söyledi, ben basit run-length encoding yaptım. AI ayrıca Facade'den bahsetmedi, ben kendim ekledim.
