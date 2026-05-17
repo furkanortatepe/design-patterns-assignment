@@ -1,11 +1,10 @@
-## Faz 2 - Structural Örüntüler
 
-### Decorator
-- **Nerede:** `decorators.py` - SikistirmaDecorator
-- **Neden:** Şifreleme algoritmalarını değiştirmeden sıkıştırma özelliği eklemek için.
-- **Kazanım:** Yeni özellikler mevcut kodu kırmadan eklenebiliyor.
+## Factory Method
+- **Nerede:** `factory.py` - `SifrelemeFactory`
+- **Neden:** Algoritma nesnelerinin yaratılmasını merkezileştirmek için.
+- **Kazanım:** Yeni algoritma eklendiğinde sadece factory değişir.
 
-### Facade
-- **Nerede:** `facade.py` - SifrelemeFacade
-- **Neden:** Factory ve Decorator'ı tek bir basit arayüz altında toplamak için.
-- **Kazanım:** Kullanıcı karmaşık alt sistemi bilmek zorunda değil.
+## Singleton
+- **Nerede:** `logger.py` - `Logger`
+- **Neden:** Uygulama genelinde tek log nesnesi olması için.
+- **Kazanım:** Bellek tasarrufu ve merkezi log yönetimi.
