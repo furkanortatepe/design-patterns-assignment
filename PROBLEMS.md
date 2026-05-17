@@ -7,7 +7,7 @@
 5. Nesne yaratma esnek değil, her seferinde tip kontrolü yapılıyor.
 
 ## AI'nın gördükleri (ChatGPT/Claude'ye sor ve yapıştır)
-[AI cevabı]
+AI, Strategy ve Factory Method önerdi. Ayrıca if-else zincirinin OCP ihlali olduğunu söyledi.
 
 ## Karşılaştırma
-[Kendi yorumun]
+Benim listemde 5 sorun vardı, AI ek olarak "test edilebilirlik" ve "bağımlılık" konularını vurguladı. Fark: AI Strategy önerdi, ben Factory Method tercih ettim çünkü daha basit.
