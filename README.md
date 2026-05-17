@@ -1,5 +1,6 @@
 # Şifreleme Aracı - Tasarım Örüntüleri Ödevi
-
+**Konu Seçimi:** E - Şifreleme Aracı  
+ÇÜNKÜ ŞİFRELEME ŞEYLERİNE MERAKIM VAR bi yerden etkilendim
 ## Proje ne yapar?
 Basit metin şifreleme/çözme aracı. Farklı algoritmaları runtime değiştirebilir, olayları izleyebilir.
 
