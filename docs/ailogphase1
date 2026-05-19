@@ -4,7 +4,7 @@
 Yukarıdaki Python şifreleme kodunda hangi tasarım sorunlarını görüyorsun? Hangi örüntüler çözer?
 
 
-## AI'ın cevabı (özet)
+## AI'ın cevabı
 if/elif zinciri ile algoritma seçimi
 Yeni bir algoritma eklemek istediğinde:
 
@@ -37,4 +37,4 @@ Factory Method → doğru stratejiyi üretir
 
 
 ## Benim uyguladığım
-AI Factory Method önerdi. Ben de uygulayacağım. 
+AI Factory Method önerdi. Ben de uygulayacağım.  yani aslında uyguladım bu methodun neleri etkilediğinin farkındayım.
