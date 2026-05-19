@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches: [ main, phase-3 ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies (if any)
+        run: |
+          # pip install -r requirements.txt  # gerekirse
+          echo "No dependencies"
+      - name: Test Factory Method
+        run: python -c "from src.factory import SifrelemeFactory; s=SifrelemeFactory.create('basit'); assert s.sifrele('a')=='b'"
+      - name: Test Strategy Pattern
+        run: python -c "from src.strategy import BasitStrateji; s=BasitStrateji(); assert s.sifrele('a')=='b'"
+      - name: Test Observer Pattern
+        run: python -c "from src.observer import SifrelemeIzleyici; i=SifrelemeIzleyici(); i.update('test','veri')"
