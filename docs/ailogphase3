@@ -1,10 +1,18 @@
-# AI Log - Faz 3
+# AI Log - Faz 3 (Behavioral Patterns + OCP + CI)
 
-## Pair programming oturumu (30 dakika)
-AI ile Strategy ve Observer pattern'lerini tartıştık. AI Strategy önerdi çünkü runtime değişim gerekiyor. Observer event logging için uygun.
+
+AI ile Strategy ve Observer pattern'lerini tartıştık. AI, runtime algoritma değişimi için Strategy'yi, olay izleme için Observer'ı önerdi. pair programing kısmı 30 dakika
 
 ## AI olmadan ne kadar sürerdi?
-Tahminen 8 saat. AI ile 4 saat.
+Bu fazı AI olmadan yaklaşık **8 saat** tahmin ediyorum. AI ile birlikte **4 saat** sürdü.internetin yavaşlığından bu süre biraz daha uzun sürdü
 
 ## AI'ın yanılttığı noktalar
-AI Observer'ın gereksiz olduğunu söyledi ama ödevde 2 behavioral pattern istendiği için ekledim. AI sıkıştırma için hazır kütüphane önerdi, ben run-length encoding yaptım.
+- AI, Observer pattern'ini gereksiz bularak sadece Singleton log yeterli demişti. Ancak ödevde **2 behavioral pattern** istendiği için Observer ekledim.
+- AI sıkıştırma için `zlib` önerdi, ancak ben **run-length encoding** ile daha basit bir çözüm yaptım.
+- AI **Facade**'den hiç bahsetmedi, Phase 2'de kendim ekledim.
+
+## Uyguladığım çözümler
+- **Strategy** (`strategy.py`): Runtime algoritma değişimi.
+- **Observer** (`observer.py`): Şifreleme olaylarını izleme.
+- **OCP örneği** (`sezar_strategy.py`): Yeni strateji eklenirken mevcut kod değişmedi.
+- **CI pipeline** (`.github/workflows/ci.yml`): Otomatik testler.
