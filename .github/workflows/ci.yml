@@ -11,7 +11,7 @@ jobs:
           python-version: '3.10'
       - name: Test Factory Method
         run: |
-          python -c "import sys; sys.path.insert(0, '.'); from src.factory import SifrelemeFactory; s = SifrelemeFactory.create('basit'); assert s.sifrele('a') == 'b'"
+          python -c "import sys; sys.path.insert(0, './src'); from factory import SifrelemeFactory; s = SifrelemeFactory.create('basit'); assert s.sifrele('a') == 'b'"
       - name: Test Strategy
         run: |
-          python -c "import sys; sys.path.insert(0, '.'); from src.strategy import BasitStrateji; s = BasitStrateji(); assert s.sifrele('a') == 'b'"
+          python -c "import sys; sys.path.insert(0, './src'); from strategy import BasitStrateji; s = BasitStrateji(); assert s.sifrele('a') == 'b'"
